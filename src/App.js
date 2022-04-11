@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import SingleProject from './pages/SingleProject'
 import Error from './pages/Error'
+import Projects from './pages/Projects'
+import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Picture from './components/Picture'
 import logo from './logo.svg'
@@ -14,6 +16,7 @@ function App() {
   return (
     <div>
       <Router>
+        <Navbar />
         <Picture />
         <Sidebar />
         <Switch>
@@ -22,6 +25,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
           </Route>
           <Route path="/project/:id">
             <SingleProject />
