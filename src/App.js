@@ -6,10 +6,8 @@ import About from './pages/About'
 import SingleProject from './pages/SingleProject'
 import Error from './pages/Error'
 import Projects from './pages/Projects'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
 import Picture from './components/Picture'
-import logo from './logo.svg'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
@@ -18,7 +16,6 @@ function App() {
       <Router>
         <Navbar />
         <Picture />
-        <Sidebar />
         <Switch>
           <Route exact path="/">
             <Home />

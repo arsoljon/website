@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import { picture } from '../data'
 
 const Picture = () => {
-  const [pic, setPic] = useState(picture)
-  let { id, url } = picture
+  const { id, url } = picture
   return (
-    <>
-      <h1>picture component</h1>
-    </>
+    <div className="container">
+      <div className="person">
+        <img src={url} alt="Jonathan" className="person img"></img>
+      </div>
+    </div>
   )
 }
 

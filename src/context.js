@@ -1,5 +1,5 @@
 import React, { useState, useContext, useReducer, useEffect } from 'react'
-import { projects } from './projectData'
+import { projects } from './data'
 
 const AppContext = React.createContext()
 
