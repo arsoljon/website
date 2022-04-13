@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
   return (
     <section className="section home-section">
-      <h1 className="section-title">Introduction</h1>
+      <h2 className="section-title">Introduction</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
