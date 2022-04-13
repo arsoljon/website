@@ -13,7 +13,7 @@ const Project = ({ id, title, picture, url, desc }) => {
         <h3>{title}</h3>
         <p>{desc}</p>
       </div>
-      <a href={url}>Github</a>
+      <a href={url}>Repository</a>
     </div>
   )
 }

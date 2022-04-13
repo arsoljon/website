@@ -6,14 +6,14 @@ export const projects = [
     title: 'Explorers Bubble',
     picture: 'https://i.imgur.com/3wghHhY.png',
     url: 'https://github.com/arsoljon/Senior-Project-4390',
-    desc: 'This is the capstone project for my senior project course. It is a 2d adventure game where a character can travel to different islands, explore underwater, and kill different enemies. The original idea was to have everything underwater, the islands being encapsulated by bubbles, resulting in the player experiencing unique game physics. ',
+    desc: 'This is the capstone project for my senior project course. It is a 2d adventure game where a character can travel to different islands, explore underwater, and kill different enemies. The original idea was to have everything underwater with the islands being encapsulated by bubbles. This would result in the player experiencing unique game physics. ',
   },
   {
     id: 2,
     title: 'Stock Picker - Backend',
     picture: 'https://i.imgur.com/7Notqvy.png',
     url: 'https://github.com/arsoljon/StockPickerTTH12-1-Back',
-    desc: 'This is the bachkend portion of a Stock Picker application. Using NodeJS, we communicated to a RESTful API and implemented CRUD operations. Our team organized tasks using the SCRUM methodology. We used Jira to track product development. Lastly, combined our work with the frontend team at the end of the internship.',
+    desc: 'This is the bachkend portion of a Stock Picker application. Using NodeJS, we communicated to a RESTful API and implemented CRUD operations. Our team organized tasks using the SCRUM methodology. We used Jira to track product development. Lastly, we combined our work with the frontend team at the end of our internship.',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const projects = [
     title: 'Neural Network Graph',
     picture: 'https://i.imgur.com/an7DVJ0.png',
     url: 'https://github.com/arsoljon/neural-network-graph',
-    desc: 'This is a visual application that eaisly makes an example nueral network. Instead of tediously creating nodes and lines for each layer, this app allows you to input a number for each layer. Then outputs a picture accordingly.',
+    desc: 'This is a visual application that makes a depiction of a nueral network. Instead of tediously creating nodes and lines for each layer, this app allows you to input a number for each layer. Then outputs a picture accordingly.',
   },
 ]
 
