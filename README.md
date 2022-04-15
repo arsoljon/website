@@ -1,5 +1,3 @@
-# website
+# Portfolio Website
 
-## Making a website using reactJS
-
-## Designed the outline of my website using figma.
+Things about myself including goals, projects, and hobbies. Made using ReactJS.
