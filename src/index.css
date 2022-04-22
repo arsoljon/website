@@ -227,10 +227,6 @@ nav {
   transform: rotate(90deg);
 }
 
-.nav-toggle:not():hover {
-  transform: rotate(90deg);
-}
-
 .logo {
   height: 40px;
 }
@@ -320,6 +316,10 @@ nav {
   }
   .nav-toggle {
     display: none;
+  }
+  .nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
   }
   .links-container {
     height: auto !important;
