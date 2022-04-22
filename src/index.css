@@ -346,4 +346,9 @@ nav {
   .social-icons a:hover {
     color: var(--clr-primary-7);
   }
+  .focused-project {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 }
