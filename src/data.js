@@ -15,7 +15,7 @@ export const projects = [
     picture: 'https://i.imgur.com/7Notqvy.png',
     url: 'https://github.com/arsoljon/StockPickerTTH12-1-Back',
     desc: 'This is the backend portion of a Stock Picker application. Using NodeJS, we communicated to a RESTful API and implemented CRUD operations. Our team organized tasks using the SCRUM methodology. We used Jira to track product development. Lastly, we combined our work with the frontend team at the end of our internship.',
-    tools: ['NodeJS', 'Jira'],
+    tools: ['NodeJS', 'REST API', 'Jira'],
   },
   {
     id: 3,
