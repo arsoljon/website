@@ -7,7 +7,7 @@ const About = () => {
     <section className="section about-section">
       <h2 className="section-title">About</h2>
       <p>
-        I have been attending UTRGV and working at Target for the past 7 years.
+        I am a recent graduate from UTRGV and have been working at Target for the past 8 years.
         Over these years, I have narrowed down my interest to software
         development, IoT securtiy, and cloud management. My hobbies include
         guitar, golf, and chess. However, I enjoy new things that challenge me.
@@ -19,11 +19,7 @@ const About = () => {
       <div className="work-links">
         <ul>
           <li>
-            <h3>Preferred email: </h3>
-            <a>jonathan.arsola01@utrgv.edu</a>
-          </li>
-          <li>
-            <h3>Alternate email: </h3>
+            <h3>email: </h3>
             <a>jdanarsola@gmail.com</a>
           </li>
           <li> </li>
