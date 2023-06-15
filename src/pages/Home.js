@@ -8,7 +8,8 @@ const Home = () => {
         Targeting an Entry-Level Position as a Software Developer. I'm driven to
         be part of a self-motivated team that strives to build an innovative
         future. My long term goal is to enter the cyber security field. I also
-        have interest in creating and securing IoT techonolgy.
+        have interest in creating and securing IoT techonolgy. Lastly, I am a recent 
+        graduate and currently studying for the AWS cloud practioner certification. 
       </p>
     </section>
   )
