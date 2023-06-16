@@ -302,6 +302,32 @@ nav {
   border-radius: 10%;
   box-shadow: var(--light-shadow);
 }
+.cycle_projects {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top:80%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 100px;
+}
+
+.right-arrow {
+  right: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .arrow {
+    display: none; /* Hide the arrows when the window width is 800px or smaller */
+  }
+}
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -352,3 +378,5 @@ nav {
     text-align: center;
   }
 }
+
+
