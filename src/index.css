@@ -224,7 +224,7 @@ nav {
 
 .nav-toggle:hover {
   color: var(--clr-primary-1);
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .logo {
