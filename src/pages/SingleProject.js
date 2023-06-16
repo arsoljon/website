@@ -16,8 +16,12 @@ const SingleProject = () => {
     return (
       <div className="focused-project">
         <Link to="/projects">Back</Link>
-        <div className="focused img-container">
-          <img src={picture} alt={title} />
+        <div className="cycle-projects">
+          <div className="focused img-container">
+            <img src={picture} alt={title} />
+          </div>
+          <div className="arrow left-arrow"><h2>&#8592;</h2></div>
+          <div className="arrow right-arrow"><h2>&#8594;</h2></div>
         </div>
         <div>
           <h3>{title}</h3>
