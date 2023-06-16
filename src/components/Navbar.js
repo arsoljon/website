@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <h2 className="title">Jonathan Arsola</h2>
-          <button className="nav-toggle" onClick={toggleLinks}>
+          <button className="" onClick={toggleLinks}>
             ...
           </button>
         </div>
