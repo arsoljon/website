@@ -302,6 +302,27 @@ nav {
   border-radius: 10%;
   box-shadow: var(--light-shadow);
 }
+.cycle_projects {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top:80%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 100px;
+}
+
+.right-arrow {
+  right: 100px;
+}
+
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -353,23 +374,4 @@ nav {
   }
 }
 
-.cycle_projects {
-  position: relative;
-}
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: #000;
-  cursor: pointer;
-}
-
-.left-arrow {
-  left: 10px;
-}
-
-.right-arrow {
-  right: 10px;
-}
