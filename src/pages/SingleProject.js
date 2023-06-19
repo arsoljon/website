@@ -9,6 +9,7 @@ const SingleProject = () => {
     projects.filter((project) => project.id == id)
   )
 
+
   if (project.length == 0) {
     return <Error />
   } else {
@@ -20,8 +21,6 @@ const SingleProject = () => {
           <div className="focused img-container">
             <img src={picture} alt={title} />
           </div>
-          <div className="arrow left-arrow"><h2>&#8592;</h2></div>
-          <div className="arrow right-arrow"><h2>&#8594;</h2></div>
         </div>
         <div>
           <h3>{title}</h3>
@@ -38,7 +37,7 @@ const SingleProject = () => {
             })}
           </p>
         </div>
-        <a href={url}>Repository</a>
+        <a href={url} target="_blank">Repository</a>
       </div>
     )
   }
