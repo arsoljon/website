@@ -8,8 +8,7 @@ const SingleProject = () => {
   const [project, setProject] = React.useState(
     projects.filter((project) => project.id == id)
   )
-  let left_id = id
-  let right_id = id
+
 
   if (project.length == 0) {
     return <Error />
@@ -22,8 +21,6 @@ const SingleProject = () => {
           <div className="focused img-container">
             <img src={picture} alt={title} />
           </div>
-          <Link to={`/project/${2}`}><div className="arrow left-arrow"><h2>&#8592;</h2></div></Link>
-          <Link to={`/project/${3}`}><div className="arrow right-arrow"><h2>&#8594;</h2></div></Link>
         </div>
         <div>
           <h3>{title}</h3>

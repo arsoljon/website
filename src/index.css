@@ -214,6 +214,7 @@ nav {
   padding: 1rem;
 }
 .nav-toggle {
+  font-family: sans-serif;
   font-size: 1.5rem;
   color: var(--clr-primary-5);
   background: transparent;
@@ -256,7 +257,9 @@ nav {
   height: 10rem;
 }
 .title {
-  height: 2rem;
+  font-family:sans-serif;
+  line-height: 1.15;
+
 }
 
 .person {
