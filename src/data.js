@@ -44,17 +44,18 @@ export const links = [
   },
   {
     id: 2,
-    url: '/about',
-    text: 'about',
+    url: '/projects',
+    text: 'projects',
   },
   {
     id: 3,
-    url: '/projects',
-    text: 'projects',
+    url: '/about',
+    text: 'about',
   },
 ]
 
 export const picture = {
   id: 1,
-  url: 'https://i.imgur.com/OizpWyj.jpg',
+  url: 'https://media.licdn.com/dms/image/C4E03AQHVfOxhxQz0rQ/profile-displayphoto-shrink_800_800/0/1644083619284?e=2147483647&v=beta&t=HFgkzyqN_oGIHyg3krduS3iMRczgPSJNGOoID4WkpLk',
 }
+//https://i.imgur.com/OizpWyj.jpg old source for pic. 
