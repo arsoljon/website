@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <h2 className="title">Jonathan Arsola</h2>
+          <h2 className="title"><span className="title-big-letter">J</span>onathan<span className="title-big-letter">A</span>rsola</h2>
           <button className="nav-toggle" onClick={toggleLinks}>
           <h2>...</h2>
           </button>

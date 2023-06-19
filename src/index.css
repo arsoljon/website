@@ -131,13 +131,12 @@ h1 {
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
 }
 h2 {
-  font-size: 2rem;
-  color: #5b92e4;
+  font-size: 1rem;
+  /*color: #97999c;
   /*background: #bababa;
   color: #616161;
   background: #bababa;
-  */
-  text-shadow: #4148a9 1px 1px 0;
+  text-shadow: #4148a9 1px 1px 0;*/
 }
 h3 {
   font-size: 1.25rem;
@@ -256,10 +255,17 @@ nav {
 .show-container {
   height: 10rem;
 }
-.title {
-  font-family:sans-serif;
-  line-height: 1.15;
 
+
+.title-big-letter{
+  font-size:1.2em;
+}
+.title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.15;
+  color: #656565;
+  letter-spacing: -1px;
 }
 
 .person {
