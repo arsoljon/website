@@ -1,28 +1,47 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import { links } from '../data'
+import { links, projects, picture } from '../data'
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
+  const [allProjects, setAllProjects] = useState(projects)
+  const [scroll, setScroll] = useState(false)
+  const [counter, setCounter] = useState(0)
+  
+  const handleScroll = () => {
+    const navHeight = .15
+    const totalY = window.innerHeight - (window.innerHeight * navHeight)
+    if(window.scrollY < totalY){
+      console.log("nav should change back!")
+      setScroll(false)
+    } else{
+      console.log("nav should change!")
+      setScroll(true)
+    }
 
+  }
+
+  const setShowImage = () => {
+    setCounter(counter + 1)
+  }
   const toggleLinks = () => {
     setShowLinks(!showLinks)
   }
 
   useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height
-    if (showLinks) {
-      linksContainerRef.current.style.height = `${linksHeight}px`
-    } else {
-      linksContainerRef.current.style.height = '0px'
+    console.log(scroll)
+    window.addEventListener('scroll', handleScroll);
+    console.log("hello world")
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     }
-  }, [showLinks])
+  })
 
   return (
-    <nav>
+    <nav className={scroll ? 'nav scrolled' : 'nav'}>
       <div className="nav-center">
         <div className="nav-header">
           <h2 className="title"><span className="title-big-letter">J</span>onathan<span className="title-big-letter">A</span>rsola</h2>
@@ -43,8 +62,19 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <div className='slideshow'>
+        <img src={`${projects[0].picture}`} alt={`Project ${projects[0].id}`} class='active'></img>
+        <img src={`${projects[1].picture}`} alt={`Project ${projects[1].id}`} ></img>
+        <img src={`${projects[2].picture}`} alt={`Project ${projects[2].id}`} ></img>
+        <img src={`${projects[3].picture}`} alt={`Project ${projects[3].id}`} ></img>
+      </div>
     </nav>
   )
 }
-
+/*
+        {projects.map((project)=>{
+          console.log(project.url)
+          return <img src={`${project.picture}`} alt={`Project ${project.id}`} class={project.id === (counter % projects.length) + 1 ? 'active' : ''}></img>
+        })}
+*/
 export default Navbar
