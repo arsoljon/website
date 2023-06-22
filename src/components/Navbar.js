@@ -9,7 +9,9 @@ const Navbar = () => {
   const linksRef = useRef(null)
   const [allProjects, setAllProjects] = useState(projects)
   const [scroll, setScroll] = useState(false)
+  
   const [counter, setCounter] = useState(0)
+
   
   const handleScroll = () => {
     const navHeight = .15
@@ -38,11 +40,11 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     }
-  })
+  },)
 
   return (
     <nav className={scroll ? 'nav scrolled' : 'nav'}>
-      <div className="nav-center">
+      <div className={scroll ? "nav-center-scrolled": 'nav-center'}>
         <div className="nav-header">
           <h2 className="title"><span className="title-big-letter">J</span>onathan<span className="title-big-letter">A</span>rsola</h2>
           <button className="nav-toggle" onClick={toggleLinks}>

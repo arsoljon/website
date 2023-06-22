@@ -203,23 +203,18 @@ Navbar
 ===============
 */
 nav {
-  background: #ffffff;
+  background-color: #574f4f;
   box-shadow: var(--light-shadow);
+  transition: background-color 0.3s linear;
   height: 100vh;
   width: 100%;
   position:static;
   top:0;
   padding: 1rem;
 }
-nav.scrolled{
-  background: #bb6f6f;
-  box-shadow: var(--light-shadow);
-  position:fixed;
-  padding: 1rem;
-  height: 15%;
-}
 
 .nav-center{
+  color: #ffffff;
   position: fixed;
   width: 100%;
 }
@@ -243,6 +238,27 @@ nav.scrolled{
 .nav-toggle:hover {
   color: var(--clr-primary-1);
   transform: rotate(0deg);
+}
+
+/*
+=============== 
+Navbar Scrolled
+===============
+*/
+
+nav.scrolled{
+  background-color: #ffffff;
+  box-shadow: var(--light-shadow);
+  opacity: 1;
+  transition: background-color 0.3s linear;
+  position:fixed;
+  padding: 1rem;
+  height: 90px;
+}
+.nav-center-scrolled{
+  color: #656565;
+  
+  width: 100%;
 }
 
 .logo {
@@ -282,7 +298,6 @@ nav.scrolled{
   font-family: "Varela Round", sans-serif;
   font-size: 1.2rem;
   line-height: 1.15;
-  color: #656565;
   letter-spacing: -1px;
 }
 
