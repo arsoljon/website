@@ -5,13 +5,15 @@ import Project from './Project'
 const ProjectList = () => {
   const [allProjects, setAllProjects] = useState(projects)
   return (
-    <section className="container border my-5">
+    <section>
       <h2 className="section-title">projects</h2>
-      <div className="projects-center">
-        {projects.map((project) => {
-          console.log(project.picture)
-          return <Project key={project.id} {...project} />
-        })}
+      <div className="container border my-5">
+        <div className="projects-center my-3">
+          {projects.map((project) => {
+            console.log(project.picture)
+            return <Project key={project.id} {...project} />
+          })}
+        </div>
       </div>
     </section>
   )

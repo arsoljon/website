@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 const Project = ({ id, title, picture, url, desc }) => {
   return (
-    <div className="row">
+    <div className="row my-5">
+      <h3>{title}</h3>
       <div className="img">
         <Link to={`/project/${id}`}>
-          <img src={picture} alt={title} className='img-thumbnail w-50 d-block mx-auto'/>
+          <img src={picture} alt={title} className='img-thumbnail w-50 d-block mx-auto my-2'/>
         </Link>
       </div>
       <div>
-        <h3>{title}</h3>
         <p>{desc}</p>
       </div>
       <a href={url}>Repository</a>
