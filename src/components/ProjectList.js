@@ -5,7 +5,7 @@ import Project from './Project'
 const ProjectList = () => {
   const [allProjects, setAllProjects] = useState(projects)
   return (
-    <section className="section">
+    <section className="container border my-5">
       <h2 className="section-title">projects</h2>
       <div className="projects-center">
         {projects.map((project) => {
