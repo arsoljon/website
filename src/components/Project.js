@@ -6,7 +6,7 @@ const Project = ({ id, title, picture, url, desc }) => {
     <div className="row">
       <div className="img">
         <Link to={`/project/${id}`}>
-          <img src={picture} alt={title} />
+          <img src={picture} alt={title} className='img-thumbnail w-50 d-block mx-auto'/>
         </Link>
       </div>
       <div>
