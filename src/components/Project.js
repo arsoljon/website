@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Project = ({ id, title, picture, url, desc }) => {
   return (
-    <div className="row my-5">
+    <div className="container border row my-5">
+      <div className='projects-center my-3'>
       <h3>{title}</h3>
       <div className="img">
         <Link to={`/project/${id}`}>
@@ -12,6 +13,7 @@ const Project = ({ id, title, picture, url, desc }) => {
       </div>
       <div>
         <p>{desc}</p>
+      </div>
       </div>
     </div>
   )
