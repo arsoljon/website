@@ -13,7 +13,6 @@ const Project = ({ id, title, picture, url, desc }) => {
       <div>
         <p>{desc}</p>
       </div>
-      <a href={url}>Repository</a>
     </div>
   )
 }
