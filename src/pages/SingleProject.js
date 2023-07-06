@@ -15,15 +15,17 @@ const SingleProject = () => {
   } else {
     const { title, picture, url, desc, tools } = project[0]
     return (
-      <div className="focused-project">
-        <Link to="/projects">Back</Link>
+      <div className="focused-project my-5">
+        <h3>{title}</h3>
+        <div className='container border'>
+        
         <div className="cycle-projects">
-          <div className="focused img-container">
+          <div className="focused img-container my-5">
             <img src={picture} alt={title} />
           </div>
         </div>
         <div>
-          <h3>{title}</h3>
+          
           <p>{desc}</p>
           <p>
             Tools:{' '}
@@ -37,7 +39,10 @@ const SingleProject = () => {
             })}
           </p>
         </div>
+        <div className='my-3'>
         <a href={url} target="_blank">Repository</a>
+        </div>
+      </div>
       </div>
     )
   }
